@@ -1,0 +1,1 @@
+ALTER TYPE "public"."finding_kind" ADD VALUE 'injection';

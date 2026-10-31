@@ -1,0 +1,12 @@
+node_modules
+.next
+.env.local
+eval/report.md
+eval/results.json
+
+next-env.d.ts
+*.tsbuildinfo
+test-results
+playwright-report
+
+.planning

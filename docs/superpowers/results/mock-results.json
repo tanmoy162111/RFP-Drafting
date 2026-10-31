@@ -1,0 +1,569 @@
+{
+  "provider": "mock-extractive",
+  "now": "2026-10-31",
+  "metrics": {
+    "drafted": 55,
+    "acceptedRate": 0.9454545454545454,
+    "citationCoverage": 1,
+    "correctRouting": 1,
+    "wrongFactCount": 0,
+    "hoursSavedEstimate": 18.33
+  },
+  "gates": [
+    {
+      "name": "Citation coverage",
+      "pass": true,
+      "actual": 1,
+      "required": "= 100%"
+    },
+    {
+      "name": "Correct routing of traps and unanswerable questions",
+      "pass": true,
+      "actual": 1,
+      "required": "= 100%"
+    },
+    {
+      "name": "Wrong facts",
+      "pass": true,
+      "actual": 0,
+      "required": "= 0"
+    }
+  ],
+  "humanByReason": {
+    "conflict": 1,
+    "stale": 1,
+    "no_evidence": 8
+  },
+  "items": [
+    {
+      "key": "fabrikam-rfp:1",
+      "question": "Describe how customer data is encrypted at rest and in transit.",
+      "status": "draftable",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:2",
+      "question": "What is the date of your most recent SOC 2 Type II report?",
+      "status": "needs_human",
+      "reason": "conflict",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-rfp:3",
+      "question": "How long do you retain customer data after contract termination?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:4",
+      "question": "Describe your incident response process and breach notification timeline.",
+      "status": "draftable",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:5",
+      "question": "What uptime SLA do you commit to?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:6",
+      "question": "How long does a typical implementation take?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:7",
+      "question": "Describe the support you provide for critical issues.",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:8",
+      "question": "What are your recovery time and recovery point objectives?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:9",
+      "question": "Provide your pricing for 50 users.",
+      "status": "needs_human",
+      "reason": "stale",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-rfp:10",
+      "question": "Do you offer an on-premise deployment option?",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-questionnaire:1",
+      "question": "Do you support single sign-on?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:2",
+      "question": "Do you require multi-factor authentication for production access?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:3",
+      "question": "How often are access reviews performed?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:4",
+      "question": "Do you encrypt customer data at rest?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:5",
+      "question": "Do you encrypt customer data in transit?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:6",
+      "question": "Where is customer data hosted?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:7",
+      "question": "Do you take encrypted backups?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:8",
+      "question": "Do you hold an ISO 27001 certificate? If so, when does it expire?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:9",
+      "question": "Do you commission independent penetration tests?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:10",
+      "question": "Do you hold FedRAMP authorization?",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-questionnaire:11",
+      "question": "Do you support HIPAA business associate agreements?",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-questionnaire:12",
+      "question": "Do you maintain a list of subprocessors?",
+      "status": "draftable",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:11",
+      "question": "How do you classify and handle customer data?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:13",
+      "question": "Can customers request deletion of their data?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:14",
+      "question": "Can customers export their data?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:15",
+      "question": "Have you appointed a data protection officer?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:16",
+      "question": "Do you comply with GDPR?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:17",
+      "question": "Can sensitive fields be masked from some users?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:18",
+      "question": "Are audit logs available to customer administrators?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:19",
+      "question": "Do you enforce a minimum password length?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:20",
+      "question": "Do idle user sessions time out automatically?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:21",
+      "question": "Do you keep centralized security logs?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:22",
+      "question": "Are production networks segmented from your corporate network?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:23",
+      "question": "Do you run background checks on employees?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:24",
+      "question": "Do employees receive security awareness training?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:12",
+      "question": "Describe how you assess the security of your vendors.",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:25",
+      "question": "Do you test your business continuity plan?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:26",
+      "question": "Are employee laptops protected with endpoint security?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:13",
+      "question": "Describe how you scan for and remediate vulnerabilities.",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:27",
+      "question": "Do you apply operating system patches on a regular schedule?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:14",
+      "question": "Describe your change management process.",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:15",
+      "question": "How do you check code for security issues before release?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:28",
+      "question": "Is access to source code restricted?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:29",
+      "question": "Do you run a bug bounty program?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:30",
+      "question": "Do you rotate encryption keys?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:31",
+      "question": "Do you have protection against denial of service attacks?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:32",
+      "question": "Do you offer an API?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:33",
+      "question": "Do you provide online product documentation?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:16",
+      "question": "Which languages does the product support?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:34",
+      "question": "Does your web application meet WCAG accessibility conformance?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:35",
+      "question": "Do you support role-based permissions?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:36",
+      "question": "Do you provide a sandbox environment?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:17",
+      "question": "Which data sources can your platform connect to?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:18",
+      "question": "How often is dashboard data refreshed?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:19",
+      "question": "What training do you provide during onboarding?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:20",
+      "question": "How often do you release new features?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:21",
+      "question": "Describe your escalation path for critical incidents.",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:22",
+      "question": "Which support channels are available?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:23",
+      "question": "What insurance coverage do you maintain?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-questionnaire:37",
+      "question": "Do you publish a public status page?",
+      "status": "draftable",
+      "accepted": true,
+      "wrongFact": false,
+      "guarded": false
+    },
+    {
+      "key": "fabrikam-rfp:24",
+      "question": "Describe the physical security controls at your data centers.",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-rfp:25",
+      "question": "Do you offer a perpetual software license?",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-questionnaire:38",
+      "question": "Do you hold PCI DSS certification?",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-questionnaire:39",
+      "question": "Is a government cloud region available?",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    },
+    {
+      "key": "fabrikam-questionnaire:40",
+      "question": "Is a single-tenant dedicated stack available?",
+      "status": "needs_human",
+      "reason": "no_evidence",
+      "accepted": false,
+      "wrongFact": false,
+      "guarded": true
+    }
+  ]
+}
