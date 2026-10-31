@@ -3,6 +3,7 @@
 Drafts first answers to RFPs and security questionnaires from a company's past proposals and approved content, with a source for every answer. A person reviews every answer before anything is exported.
 
 ## Read first
+- `docs/NEXT-SESSION.md` — current status and what remains (the live eval is the main open item).
 - `docs/superpowers/specs/2026-10-31-rfp-drafting-design.md` — approved design spec.
 - `docs/superpowers/plans/` — implementation plans, in order (Plan 1 domain core, then data and retrieval, drafting and eval, UI).
 - `AGENTS.md` — short pointer file.
