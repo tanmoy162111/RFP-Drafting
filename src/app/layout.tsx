@@ -12,8 +12,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main">
+          Skip to main content
+        </a>
         <header className="site-header">
           <Link href="/" className="brand">
+            <span className="brand-mark" aria-hidden="true">
+              R
+            </span>
             RFP drafting review
           </Link>
           <span className="mock-pill">Mock data · nothing is sent anywhere</span>
